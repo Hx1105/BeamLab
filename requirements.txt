@@ -1,0 +1,7 @@
+numpy==2.2.6
+scipy==1.17.1
+lightpipes==2.1.5
+matplotlib==3.10.6
+pillow==12.3.0
+websockets==15.0.1
+jsonschema==4.26.0

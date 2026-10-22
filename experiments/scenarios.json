@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "id": "geometric",
+      "fault_class": "geometric",
+      "physics_seed": 19001
+    },
+    {
+      "id": "source_drift",
+      "fault_class": "source_drift",
+      "physics_seed": 19101
+    },
+    {
+      "id": "dark_bias",
+      "fault_class": "dark_bias",
+      "physics_seed": 19201
+    },
+    {
+      "id": "saturation",
+      "fault_class": "saturation",
+      "physics_seed": 19301
+    },
+    {
+      "id": "thermal",
+      "fault_class": "thermal",
+      "physics_seed": 19401
+    },
+    {
+      "id": "combined",
+      "fault_class": "combined",
+      "physics_seed": 19501
+    }
+  ]
+}

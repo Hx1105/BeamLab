@@ -1,0 +1,28 @@
+name: local-dev
+schemaVersion: 1
+provider:
+  package: "@agnes/ai"
+  adapters: ["@agnes/ai"]
+  catalog: { include: [] }
+  routes:
+    - route: beamlab-mimo
+      api: openai-completions
+      baseUrl: http://127.0.0.1:44482/v1
+      credentialRef: secret://beamlab/local
+      models:
+        - id: mimo-v2.6-pro
+          name: MiMo V2.6 Pro (protected user gateway)
+          route: beamlab-mimo
+          api: openai-completions
+          baseUrl: http://127.0.0.1:44482/v1
+          reasoning: true
+          input: [text]
+          cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 }
+          contextWindow: 65536
+          maxTokens: 4096
+          toolCallFormats: [native]
+          thinkingReplay: native
+          contract_id: null
+computerUse: { enabled: false }
+adapters:
+  secrets: { kind: env }

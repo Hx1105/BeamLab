@@ -1,0 +1,1 @@
+{"name":"@beamlab/agent-boundary","version":"0.1.0","type":"module","license":"Apache-2.0","exports":"./index.mjs","agnes":{"plugins":[{"export":"beamGuard","id":"ext:beamlab/agent-boundary","inject":["extension"]}]}}

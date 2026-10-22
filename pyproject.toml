@@ -1,0 +1,11 @@
+[project]
+name = "beamlab-mhs"
+version = "0.1.0"
+description = "Camera-free optical diagnosis with simulated MHS devices and CPU scalar wave optics"
+requires-python = ">=3.13"
+license = "Apache-2.0"
+dependencies = ["LightPipes==2.1.5", "numpy==2.2.6", "scipy==1.17.1", "matplotlib==3.10.6", "websockets==15.0.1", "jsonschema==4.26.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
